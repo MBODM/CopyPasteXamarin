@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CopyPasteXamarin"
+             x:Class="CopyPasteXamarin.MainPage">
+  <StackLayout Margin="25,100,25,0">
+    <StackLayout Margin="0,0,0,25" Orientation="Horizontal" HorizontalOptions="Center">
+      <Image Source="AppLogo.png" Aspect="AspectFit"></Image>
+      <Image Source="AppText.png" Aspect="AspectFit"></Image>
+    </StackLayout>
+    <Label Text="ID:"></Label>
+    <StackLayout BackgroundColor="Gray" Padding="2">
+      <Editor x:Name="editor" Keyboard="Numeric"></Editor>
+    </StackLayout>
+    <Button Text="Copy to clipboard" x:Name="button"></Button>
+  </StackLayout>
+</ContentPage>
